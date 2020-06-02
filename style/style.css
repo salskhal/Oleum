@@ -1,0 +1,122 @@
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    width: 25%;
+    height: 100vh; 
+    background-color: #160c59;
+    color: white; 
+    position: fixed;
+}
+.navbar{
+    background-color: #160c59 !important;
+}
+.nav-content{
+    margin-top: 10%;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    color: white;
+}
+
+.logo{
+    color: white !important;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.main-nav{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.main-nav, .dot{
+    color: #f89608;
+}
+
+
+.main{
+    width: 75%;
+    margin-left: 25%;
+    background-color: #160c59;
+}
+
+.transact{
+    height: 90vh;
+}
+
+/* land section */
+.land{
+    height: 80vh;
+}
+
+.img{
+    width: 60%;
+    margin-left: 35%;
+    margin-top: -22%;
+}
+.land-value{
+    margin-top: 15%;
+    color: white;
+}
+
+.land-value h2{
+    font-weight: bold !important;
+    font-size: 4em;
+}
+
+
+.diseal, .electricity, .solar{
+    display: flex;
+    flex-direction: row;
+}
+
+.transact{
+    color: white;
+    width: 80%;
+}
+
+.transact-head{
+    width: 30%;
+    font-weight: bold;
+}
+
+.transact-content{
+    width: 50%;
+    margin-bottom: 5%;
+    line-height: 50px;
+}
+
+.sol{
+    color: #f89608;
+}
+
+.delect{
+    color: #845ef2;
+}
+
+.cards{
+    height: 100vh;
+    color: white;
+}
+
+.guide{
+    height: 100vh;
+    background-color: #d3671c;
+}
+
+.card-deck{
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 25%;
+}
+
+.icons{
+    margin-top: 10%;
+}
