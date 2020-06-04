@@ -1,122 +1,295 @@
 
+/* Handles the entire content display */
 .wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    background-color: #160c59;
+    width: 100%;
+}
+
+.nav-content {
     display: flex;
     flex-direction: row;
 }
 
-.nav {
-    width: 25%;
-    height: 100vh; 
-    background-color: #160c59;
-    color: white; 
-    position: fixed;
-}
-.navbar{
-    background-color: #160c59 !important;
-}
-.nav-content{
-    margin-top: 10%;
+
+@media screen and (min-width: 580px) {
+
+    .wrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav {
+        width: 25%;
+        height: 100vh;
+        background-color: #160c59;
+        color: white;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        background-color: #160c59 !important;
+    }
+
+    .nav-content {
+        margin-top: 10%;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-li{
+
+
+
+
+/* works on both navs */
+
+li {
     list-style: none;
 }
 
-li a{
+li a {
     color: white;
 }
 
-.logo{
+.logo {
     color: white !important;
     font-weight: bold;
     font-size: 2.5em;
 }
-.main-nav{
+
+.main-nav {
     font-weight: bold;
     font-size: 1em;
 }
 
-.main-nav, .dot{
+nav {
+    background-color: #160c59 !important;
+}
+
+.main-nav,
+.dot {
     color: #f89608;
 }
 
 
-.main{
-    width: 75%;
-    margin-left: 25%;
+.main {
+    width: 100%;
     background-color: #160c59;
 }
 
-.transact{
-    height: 90vh;
+@media screen and (min-width: 580px) {
+    .main {
+        width: 100%;
+        margin-left: 25%;
+        background-color: #160c59;
+    }
 }
 
 /* land section */
-.land{
-    height: 80vh;
+.land {
+    height: 70vh;
 }
 
-.img{
-    width: 60%;
-    margin-left: 35%;
-    margin-top: -22%;
+
+.land-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
 }
-.land-value{
-    margin-top: 15%;
+
+@media screen and (min-width: 880px) {
+    .land-section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+    .land{
+        height: 90vh;
+    }
+}
+
+.land-describe {
+    width: 70%;
     color: white;
 }
 
-.land-value h2{
-    font-weight: bold !important;
-    font-size: 4em;
+picture {
+    width: 100%;
+}
+
+@media screen and (min-width: 580px){
+    picture {
+        width: 80%;
+        margin-left: -20%;
+    }
+    
 }
 
 
-.diseal, .electricity, .solar{
+h2 {
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+
+
+img {
+    opacity: 0.5;
+}
+
+
+
+
+/* transaction section */
+
+.transact {
+    color: white;
+    width: 80%;
+    height: 100vh;
+}
+
+.transact-diseal,
+.transact-electricity,
+.transact-solar {
     display: flex;
     flex-direction: row;
 }
 
-.transact{
-    color: white;
-    width: 80%;
-}
-
-.transact-head{
+.transact-head {
     width: 30%;
     font-weight: bold;
 }
 
-.transact-content{
+.transact-content {
     width: 50%;
     margin-bottom: 5%;
     line-height: 50px;
 }
 
-.sol{
+.sol {
     color: #f89608;
 }
 
-.delect{
+.delect {
     color: #845ef2;
 }
 
-.cards{
-    height: 100vh;
-    color: white;
-}
 
-.guide{
+
+/* gallery section */
+
+/* Guide  */
+.guide {
     height: 100vh;
     background-color: #d3671c;
 }
 
-.card-deck{
+.guide-card {
     width: 70%;
     margin-left: 15%;
     padding-top: 25%;
 }
 
-.icons{
+.icons {
     margin-top: 10%;
 }
+
+
+/* Prices */
+.prices{
+    background-color: #160c59;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin: auto;
+  }
+  
+  .pricing-card{
+    flex: 1;
+    max-width: 50%;
+    background-color: #fff;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .3s linear;
+  }
+  
+  .pricing-card-header{
+    background-color: #0fbcf9;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+  }
+  
+  .pricing-card:hover .pricing-card-header{
+    box-shadow: 0 0 0 26em #0fbcf9;
+  }
+  
+  .price{
+    font-size: 70px;
+    color: #0fbcf9;
+    margin: 40px 0;
+    transition: .2s linear;
+  }
+  
+  .price sup, .price span{
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .pricing-card:hover ,.pricing-card:hover .price{
+    color: #fff;
+  }
+  
+  .pricing-card li{
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+  
+  .order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border: 2px solid #0fbcf9;
+    color: #0fbcf9;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+  }
+  
+  .order-btn:hover{
+    background-color: #0fbcf9;
+    color: #fff;
+  }
+  
+  @media screen and (max-width:1100px){
+    .pricing-card{
+      flex: 50%;
+    }
+  }
