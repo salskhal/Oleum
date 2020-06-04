@@ -24,7 +24,7 @@
     }
 
     .nav {
-        width: 25%;
+        width: 15%;
         height: 100vh;
         background-color: #160c59;
         color: white;
@@ -88,14 +88,14 @@ nav {
 @media screen and (min-width: 580px) {
     .main {
         width: 100%;
-        margin-left: 25%;
+        margin-left: 15%;
         background-color: #160c59;
     }
 }
 
 /* land section */
 .land {
-    height: 70vh;
+    margin-bottom: 50px;
 }
 
 
@@ -111,9 +111,6 @@ nav {
         flex-direction: row;
         margin-top: 10%;
         margin-left: 0;
-    }
-    .land{
-        height: 90vh;
     }
 }
 
@@ -154,7 +151,6 @@ img {
 .transact {
     color: white;
     width: 80%;
-    height: 100vh;
 }
 
 .transact-diseal,
@@ -189,7 +185,7 @@ img {
 
 /* Guide  */
 .guide {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #d3671c;
 }
 
@@ -205,8 +201,9 @@ img {
 
 
 /* Prices */
+
 .prices{
-    background-color: #160c59;
+  background-color: #160c59;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -223,7 +220,7 @@ img {
   .pricing-card{
     flex: 1;
     max-width: 50%;
-    background-color: #fff;
+    background-color: #d3671c;
     margin: 20px 10px;
     text-align: center;
     cursor: pointer;
@@ -245,12 +242,12 @@ img {
   }
   
   .pricing-card:hover .pricing-card-header{
-    box-shadow: 0 0 0 26em #0fbcf9;
+    box-shadow: 0 0 0 10em #845ef2;
   }
   
   .price{
     font-size: 70px;
-    color: #0fbcf9;
+    color: white;
     margin: 40px 0;
     transition: .2s linear;
   }
@@ -270,25 +267,17 @@ img {
     text-transform: uppercase;
   }
   
-  .order-btn{
+  .btn{
     display: inline-block;
     margin-bottom: 40px;
-    margin-top: 40px;
-    border: 2px solid #0fbcf9;
-    color: #0fbcf9;
-    padding: 18px 40px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: .3s linear;
   }
-  
+
   .order-btn:hover{
-    background-color: #0fbcf9;
+    background-color: #160c59;
     color: #fff;
   }
   
-  @media screen and (max-width:1100px){
+  @media screen and (max-width: 1100px){
     .pricing-card{
       flex: 50%;
     }
