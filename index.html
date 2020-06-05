@@ -17,21 +17,27 @@
     <div class="wrap">
         <div class="nav">
             <a class="navbar-brand logo ml-3" href="#">Oluem<span class="dot">.</span></a>
-            <ul class="nav-content mr-auto">
-                <a class="mb-3 text-decoration-none" href="#">Home</a>
-                <a class="mb-3 text-decoration-none" href="#">Buy & Sell</a>
-                <a class="mb-3 text-decoration-none" href="#">Other Energy</a>
-                <a class="mb-3 text-decoration-none" href="#">Price Today</a>
-                <a class="mb-3 text-decoration-none" href="#">Contact Us</a>
-            </ul>
+            <div class="responsive">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-content mr-auto" id="nav-content">
+                    <a class="mb-3 text-decoration-none" href="#">Home</a>
+                    <a class="mb-3 text-decoration-none" href="#">Buy & Sell</a>
+                    <a class="mb-3 text-decoration-none" href="#">Other Energy</a>
+                    <a class="mb-3 text-decoration-none" href="#">Price Today</a>
+                    <a class="mb-3 text-decoration-none" href="#">Contact Us</a>
+                    <li class="nav-item">
+                        <a class="nav-link main-nav" href="#">place order</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="main">
-            <nav class="navbar navbar-expand-lg navbar">
-                <li class="nav-item ml-auto">
-                    <a class="nav-link main-nav mr-5" href="#">place order</a>
-                </li>
-            </nav>
 
+            
             <section class="land">
                 <div class="land-section">
                     <div class="land-describe">
@@ -77,7 +83,7 @@
                 
                     <div class="pricing-card rounded">
                       <h3 class="pricing-card-header">Electricity</h3>
-                      <div class="price"><sup>$</sup>30<span>/MO</span></div>
+                      <div class="price">$30<span>/MO</span></div>
                       <button type="button" class="btn btn-outline-light">Primary</button>
                     </div>
                 
@@ -111,16 +117,16 @@
                     </div>
                 </div>
                 <div class="icons text-center">
-                    <button type="button" class="btn btn-light rounded-circle"><i class="fa fa-facebook-f"></i></button>
-                    <button type="button" class="btn btn-light rounded-circle"><i class="fa fa-instagram"></i></button>
-                    <button type="button" class="btn btn-light rounded-circle"><i class="fa fa-twitter"></i></button>
-                    <button type="button" class="btn btn-light rounded-circle"><i class="fa fa-whatsapp"></i></button>
+                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-facebook-f" style="color: white;"></i></button>
+                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-instagram" style="color: #b03b89;"></i></button>
+                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-twitter" style="color: #1c9cea;"></i></button>
+                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-whatsapp" style="color: #1ad03f;"></i></button>
                 </div>
             </section>
         </div>
     </div>
 
-
+<script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

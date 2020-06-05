@@ -1,3 +1,8 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 /* Handles the entire content display */
 .wrap {
@@ -8,23 +13,26 @@
 .nav {
     background-color: #160c59;
     width: 100%;
-}
-
-.nav-content {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
+
+.main-nav {
+    font-weight: bold;
+    font-size: 1em;
+}
+
 
 
 @media screen and (min-width: 580px) {
-
     .wrap {
         display: flex;
         flex-direction: row;
     }
 
     .nav {
-        width: 15%;
+        width: 20%;
         height: 100vh;
         background-color: #160c59;
         color: white;
@@ -36,13 +44,42 @@
     .navbar {
         background-color: #160c59 !important;
     }
+}
 
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+
+@media screen and (max-width: 580px) {
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .hamburger {
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 580px) {
     .nav-content {
         margin-top: 10%;
         text-decoration: none;
         display: flex;
-        flex-direction: column;
     }
+
 }
 
 
@@ -65,10 +102,7 @@ li a {
     font-size: 2.5em;
 }
 
-.main-nav {
-    font-weight: bold;
-    font-size: 1em;
-}
+
 
 nav {
     background-color: #160c59 !important;
@@ -88,7 +122,7 @@ nav {
 @media screen and (min-width: 580px) {
     .main {
         width: 100%;
-        margin-left: 15%;
+        margin-left: 20%;
         background-color: #160c59;
     }
 }
@@ -96,6 +130,7 @@ nav {
 /* land section */
 .land {
     margin-bottom: 50px;
+    margin-top: 20%;
 }
 
 
@@ -109,33 +144,49 @@ nav {
     .land-section {
         display: flex;
         flex-direction: row;
-        margin-top: 10%;
+        margin-top: 5%;
         margin-left: 0;
     }
 }
 
-.land-describe {
-    width: 70%;
-    color: white;
-}
+
 
 picture {
     width: 100%;
 }
 
-@media screen and (min-width: 580px){
-    picture {
-        width: 80%;
-        margin-left: -20%;
-    }
-    
-}
-
 
 h2 {
-    font-weight: bolder;
-    font-size: 2.5em;
+    font-weight: bold;
+    font-size: 3em;
 }
+
+
+
+.land-describe {    
+    color: white;
+    margin-left: -15%;
+}
+
+@media screen and (min-width: 580px) {
+    picture {
+        width: 80%;
+    }
+
+    h2 {
+        font-weight: bolder;
+        font-size: 2.5em;
+    }
+
+    .land-describe {
+        width: 100%;
+        margin: 0;   
+    }
+
+}
+
+
+
 
 
 
@@ -185,7 +236,6 @@ img {
 
 /* Guide  */
 .guide {
-    min-height: 100vh;
     background-color: #d3671c;
 }
 
@@ -202,22 +252,22 @@ img {
 
 /* Prices */
 
-.prices{
-  background-color: #160c59;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+.prices {
+    background-color: #160c59;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.pricing-table{
+.pricing-table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: min(1600px, 100%);
     margin: auto;
-  }
-  
-  .pricing-card{
+}
+
+.pricing-card {
     flex: 1;
     max-width: 50%;
     background-color: #d3671c;
@@ -227,9 +277,9 @@ img {
     overflow: hidden;
     color: #2d2d2d;
     transition: .3s linear;
-  }
-  
-  .pricing-card-header{
+}
+
+.pricing-card-header {
     background-color: #0fbcf9;
     display: inline-block;
     color: #fff;
@@ -239,46 +289,48 @@ img {
     text-transform: uppercase;
     font-weight: 600;
     transition: .4s linear;
-  }
-  
-  .pricing-card:hover .pricing-card-header{
-    box-shadow: 0 0 0 10em #845ef2;
-  }
-  
-  .price{
+}
+
+.pricing-card:hover .pricing-card-header {
+    box-shadow: 0 0 0 10em #0fbcf9;
+}
+
+.price {
     font-size: 70px;
     color: white;
     margin: 40px 0;
     transition: .2s linear;
-  }
-  
-  .price sup, .price span{
+}
+
+.price sup,
+.price span {
     font-size: 22px;
     font-weight: 700;
-  }
-  
-  .pricing-card:hover ,.pricing-card:hover .price{
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
     color: #fff;
-  }
-  
-  .pricing-card li{
+}
+
+.pricing-card li {
     font-size: 16px;
     padding: 10px 0;
     text-transform: uppercase;
-  }
-  
-  .btn{
+}
+
+.btn {
     display: inline-block;
     margin-bottom: 40px;
-  }
+}
 
-  .order-btn:hover{
+.order-btn:hover {
     background-color: #160c59;
     color: #fff;
-  }
-  
-  @media screen and (max-width: 1100px){
-    .pricing-card{
-      flex: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+    .pricing-card {
+        flex: 50%;
     }
-  }
+}
