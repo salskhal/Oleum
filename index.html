@@ -8,6 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/petroleum.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -37,7 +38,7 @@
         </div>
         <div class="main">
 
-            
+
             <section class="land">
                 <div class="land-section">
                     <div class="land-describe">
@@ -72,27 +73,38 @@
                         maxime hic consectetur. Ex sed porro asperiores unde?</p>
                 </div>
             </section>
-            
+
+            <section class="gallery">
+                <div class="gallery-pic">
+                    <img src="./img/solar2.jpg" alt="" class="image1 rounded" data-aos="fade-right">
+                    <img src="./img/petrol.jpg" alt="" class="image2 rounded" data-aos="fade-left">
+                    <img src="./img/electricity.jpg" alt="" class="image3 rounded" data-aos="fade-right">
+                </div>
+                
+            </section>
+
+
+
             <section class="prices">
                 <div class="pricing-table">
-                    <div class="pricing-card rounded">
-                      <h3 class="pricing-card-header">diseal & pms</h3>
-                      <div class="price"><sup>$</sup>15<span>/MO</span></div>
-                      <button type="button" class="btn btn-outline-light">Primary</button>
+                    <div class="pricing-card rounded" data-aos="fade-right">
+                        <h3 class="pricing-card-header">diseal & pms</h3>
+                        <div class="price"><sup>$</sup>15<span>/MO</span></div>
+                        <button type="button" class="btn btn-outline-light">Primary</button>
                     </div>
-                
-                    <div class="pricing-card rounded">
-                      <h3 class="pricing-card-header">Electricity</h3>
-                      <div class="price">$30<span>/MO</span></div>
-                      <button type="button" class="btn btn-outline-light">Primary</button>
+
+                    <div class="pricing-card rounded" data-aos="fade-up">
+                        <h3 class="pricing-card-header">Electricity</h3>
+                        <div class="price">$30<span>/MO</span></div>
+                        <button type="button" class="btn btn-outline-light">Primary</button>
                     </div>
-                
-                    <div class="pricing-card rounded">
-                      <h3 class="pricing-card-header">renewable energy</h3>
-                      <div class="price"><sup>$</sup>50<span>/MO</span></div>
-                      <button type="button" class="btn btn-outline-light">Learn more</button>
+
+                    <div class="pricing-card rounded" data-aos="fade-left">
+                        <h3 class="pricing-card-header">renewable energy</h3>
+                        <div class="price"><sup>$</sup>50<span>/MO</span></div>
+                        <button type="button" class="btn btn-outline-light">Learn more</button>
                     </div>
-                  </div>
+                </div>
             </section>
 
             <section class="guide">
@@ -117,16 +129,26 @@
                     </div>
                 </div>
                 <div class="icons text-center">
-                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-facebook-f" style="color: white;"></i></button>
-                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-instagram" style="color: #b03b89;"></i></button>
-                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-twitter" style="color: #1c9cea;"></i></button>
-                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-whatsapp" style="color: #1ad03f;"></i></button>
+                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-facebook-f"
+                            style="color: white;"></i></button>
+                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-instagram"
+                            style="color: #b03b89;"></i></button>
+                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-twitter"
+                            style="color: #1c9cea;"></i></button>
+                    <button type="button" class="btn btn-dark rounded-circle"><i class="fa fa-whatsapp"
+                            style="color: #1ad03f;"></i></button>
                 </div>
             </section>
         </div>
     </div>
 
-<script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+    <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
