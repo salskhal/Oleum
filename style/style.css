@@ -3,6 +3,10 @@ body {
     padding: 0;     
 }
 
+html {
+    scroll-behavior: smooth;
+  } 
+
 .advance {
     display: flex;
     flex-direction: row;
@@ -24,10 +28,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.nav a{
+    text-decoration: none;
+}
 
 .navlink {
     list-style: none;
+    margin-top: 25px;
 }
 
 .navlink a {
@@ -48,6 +55,14 @@ body {
     color: #f89608;
 }
 
+.navlinks li a:hover{
+    color: #f89608;
+    border-bottom: 2px solid #f89608;
+    transition:  all 0.5s ease-in;
+    padding: 15px 0;
+}
+
+
 
 @media screen and (max-width: 880px) {
     .main {
@@ -57,13 +72,13 @@ body {
     .nav {
         display: flex;
         flex-direction: row;
-        position: relative;
+        position: relative; 
     }
 
     .navlinks {
         display: flex;
         flex-direction: column;
-        margin-left: 61.5%;
+        margin-left: 30%;
     }
 
     .navlink {
@@ -225,7 +240,7 @@ img {
         align-items: center;
         justify-content: center;
         text-align: center;
-        /* margin-left: 25%; */
+        margin-top: 40%;
     }
 
     .transact-diseal,
@@ -278,6 +293,10 @@ img {
 }
 
 @media screen and (max-width: 880px) {
+    .gallery{
+        margin-top: 40%;
+    }
+    
     .gallery-pic {
         display: block;
         margin-left: 25%;
@@ -373,9 +392,14 @@ img {
 }
 
 @media screen and (max-width: 1100px) {
+    .prices{
+        margin-top: 40%;
+    }
+    
     .pricing-card {
         flex: 50%;
     }
+    
 }
 
 /* guide */
